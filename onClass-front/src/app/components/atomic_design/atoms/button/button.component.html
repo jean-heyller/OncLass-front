@@ -1,0 +1,16 @@
+<button [type]="type" 
+          class="button"
+          [style.background-color]="backgroundColor"
+          [style.border-radius]="borderRadius"
+          [style.width]="width"
+          [style.height]="height"
+          [style.font-size]="fontSize"
+          [style.padding]="padding"
+          [style.aria-label]="value || text">
+  <img class="button-image" 
+       *ngIf="image" src="image"
+       [style.height]="image_height"
+       [style.widh]="image_width"
+       alt="{{text}}">
+  <span class="button-text">{{text}}</span>
+</button>
