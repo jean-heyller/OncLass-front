@@ -1,0 +1,11 @@
+<div>
+  <ul>
+    <app-button *ngFor="let item of items"
+    [fontSize]="item.fontSize"
+    [fontWeight]="item.fontWeight"
+    [backgroundColor]="item.backgroundColor"
+    >
+      <!-- <a [routerLink]="item.link">{{ item.name }}</a> -->
+    </app-button>
+  </ul>
+</div>
